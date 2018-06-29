@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--fragments for navigation link-->
+    <div th:replace="base :: navlinks"></div>
+    <!--content body-->
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+
+    <div class="padding-body">
+        <div class="container jumbotron">
+            <h3 class="text-center  pb-5 "><span class="text-success">Easy Connection </span><span class="text-muted h5" >for employers</span></h3>
+            <div class="row">
+
+                    <div class="col-sm-12 col-md-8">
+                        <h4>Sign Up Form</h4>
+                        <form class=" mt-5">
+                        <!--first name and last name-->
+                            <div class="row ">
+                                <div class="col-sm-12 col-md-6  mb-3">
+                                    <label>First Name</label>
+                                    <input class="form-control" placeholder="First Name" type="text"  required/>
+                                </div>
+                                <div class="col-sm-12 col-md-6  mb-3">
+                                    <label>Last Name</label>
+                                    <input class="form-control" placeholder="Last Name" type="text"  required/>
+                                </div>
+                            </div>
+                            <!--job title and company name-->
+                            <div class="row ">
+                                <div class="col-sm-12 col-md-6  mb-3">
+                                    <label>Your Job Title</label>
+                                    <input class="form-control" placeholder="Job Title" type="text"  required/>
+                                </div>
+                                <div class="col-sm-12 col-md-6  mb-3">
+                                    <label>Business Name</label>
+                                    <input class="form-control" placeholder="Company Name" type="text"  required/>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-sm-12 col-md-12 col-lg-6  mb-3">
+                                    <label>Your Email</label>
+                                    <input class="form-control" placeholder="Email Address" type="email"  required/>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-6  mb-3">
+                                    <label>Password</label>
+                                    <input class="form-control" placeholder="Password" type="password"  required/>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 row" >
+                                    <div class="col-sm-12 col-md-6">
+                                        <input class="btn btn-lg btn-warning pr-5 pl-5" type="submit" value="Continue">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <p>Already have an account? <a class="btn btn-lg btn-info pr-5 pl-5" href="#">Log in</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+<!--right colum----------------------->
+                    <div class="col-sm-12 col-md-4 mt-5  border border-secondary p-5" align="center">
+
+                        <p>Looking For a Job?</p>
+                        <a href="#" class=" btn btn-info btn-lg">Create Account</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+    <!--content body end // fragments footer from base.html-->
+    <div th:replace="base :: footer"></div>
+
+    <!--bootstrap script tags fragments -->
+    <div th:replace="base :: script"></div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.navbar{
+    background: linear-gradient(to bottom, rgb(107, 102, 162) 0%, rgb(53, 47, 62) 100%);
+}
+.padding-body{
+    margin-bottom: 150px;
+}
+.footer{
+    height: 100px;
+}
